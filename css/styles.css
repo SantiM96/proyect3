@@ -110,13 +110,14 @@ p {
     padding-top: 3rem;
 }
 .sidebar {
-    padding-top: 5rem;
+    padding: 5rem 0;
+    text-align: center;
 }
 .sidebar a {
     display: block;
     color: #03e2de;
     font-size: 1.8rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
     text-decoration: none;
 }
 .sidebar a:hover {
@@ -128,7 +129,7 @@ p {
     padding: 0;
 }
 @media (min-width: 768px) {
-        .main-content {
+    .main-content {
         width: 70%;
         float: left;
         padding-right: 3rem;
@@ -137,10 +138,87 @@ p {
         width: 30%;
         float: right;
         padding-top: 3rem;
+        text-align: start;
     }
     .entry img {
         width: 30rem;
         float: left;
     }
+}
 
+    /** Footer **/
+.site-footer {
+    background-color: #db008d;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 3rem;
+}
+@media (min-width: 768px) {
+    .site-footer {
+        padding-top: 2rem;
+        margin-top: 10rem;
+    }
+}
+.site-footer h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+.site-footer p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+@media (min-width: 768px) {
+    .about {
+        float: left;
+        text-align: start;
+        width: 25%;
+    }
+}
+.container-footer {
+    padding: 0 12rem;
+}
+@media (min-width: 768px) {
+    .container-footer {
+        padding: 0;
+    }
+}
+.navegation-footer {
+    padding: 1.5rem 2rem 0 2rem;
+
+}
+.navegation-footer nav {
+    padding-top: 1rem;
+}
+.navegation-footer a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+.navegation-footer a:hover {
+    background-color: #03e2de;
+}
+@media (min-width: 768px) {
+    .navegation-footer {
+        float: right;
+        text-align: end;
+        padding-right: 0;
+    }
+}
+
+    /** Copyright **/
+.copyright {
+    background-color: #c0037e;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0 0 0;
+}
+.copyright p {
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .copyright {
+        text-align: end;
+    }
 }
