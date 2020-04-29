@@ -10,12 +10,53 @@ body {
 }
 img {
     max-width: 100%;
+    display: block;
+    margin: auto
 }
+@media (min-width: 768px) {
+    img {
+        display: inline;
+    }
+}
+@media (min-width: 768px) {
+    img {
+        padding-right: 1rem;
+    }
+}
+p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
 
     /** Utilities **/
 .container {
     max-width: 110rem;
     margin: 0 auto;
+    padding: 0 2rem;
+}
+@media (min-width: 115rem) {
+    .container {
+        padding: 0;
+    }
+}
+.clearfix {
+    overflow: auto;
+}
+.button {
+    display: block;
+    text-align: center;
+    background-color: #03e2de;
+    color: #ffffff;
+    padding: 1.2rem 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+    }
 }
 
     /** Header **/
@@ -26,6 +67,18 @@ img {
     /** Navegation **/
 .bar {
     background-color: #db008d;
+}
+@media (min-width: 768px) {
+    .bar-cont {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    }
+}
+@media (min-width: 115rem) {
+    .bar-cont {
+        padding: 0;
+    }
 }
 .main-nav a {
     display: block;
@@ -42,4 +95,29 @@ img {
 }
 .main-nav a:hover {
     background-color: #03e2de;
+}
+
+    /** Main Content **/
+.entry {
+    padding-top: 3rem;
+}
+.entry h2 {
+    color: #03e2de;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+        .main-content {
+        width: 70%;
+        float: left;
+    }
+    .sidebar {
+        width: 30%;
+        float: right;
+    }
+    .entry img {
+        width: 300px;
+        float: left;
+    }
+
 }
