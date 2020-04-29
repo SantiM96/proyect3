@@ -23,6 +23,11 @@ img {
         padding-right: 1rem;
     }
 }
+h2 {
+    color: #03e2de;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+}
 p {
     font-size: 1.5rem;
     line-height: 1.7;
@@ -40,8 +45,10 @@ p {
         padding: 0;
     }
 }
-.clearfix {
-    overflow: auto;
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
 }
 .button {
     display: block;
@@ -99,24 +106,40 @@ p {
 
     /** Main Content **/
 .entry {
+    text-align: justify;
     padding-top: 3rem;
 }
-.entry h2 {
+.sidebar {
+    padding-top: 5rem;
+}
+.sidebar a {
+    display: block;
     color: #03e2de;
-    font-size: 2.5rem;
-    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    color: #ffffff;
+    background-color: #03e2de;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
 }
 @media (min-width: 768px) {
         .main-content {
         width: 70%;
         float: left;
+        padding-right: 3rem;
     }
     .sidebar {
         width: 30%;
         float: right;
+        padding-top: 3rem;
     }
     .entry img {
-        width: 300px;
+        width: 30rem;
         float: left;
     }
 
