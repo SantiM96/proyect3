@@ -104,6 +104,37 @@ p {
     background-color: #03e2de;
 }
 
+    /** Responisve Navegation **/
+.bar {
+    overflow: hidden;
+}
+.mobile-menu {
+    color: white;
+    font-size: 3.5rem;
+    display: block;
+    text-align: center;
+    padding: 2rem 0;
+}
+.main-nav {
+    max-height: 0;
+    transition: 0.5s;
+}
+#nav:target {
+    max-height: 40rem;
+}
+.close {
+    font-size: 4rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu,
+    .close {
+        display: none!important;
+    }
+    .main-nav {
+        max-height: 40rem;
+    }
+}
+
     /** Main Content **/
 .entry {
     text-align: justify;
